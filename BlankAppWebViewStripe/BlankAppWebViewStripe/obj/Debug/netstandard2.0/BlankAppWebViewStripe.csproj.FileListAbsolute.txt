@@ -1,0 +1,12 @@
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\bin\Debug\netstandard2.0\BlankAppWebViewStripe.deps.json
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\bin\Debug\netstandard2.0\BlankAppWebViewStripe.dll
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\bin\Debug\netstandard2.0\BlankAppWebViewStripe.pdb
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.AssemblyInfoInputs.cache
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.AssemblyInfo.cs
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.dll
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.pdb
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\Views\WebViewPage.xaml.g.cs
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.csprojAssemblyReference.cache
