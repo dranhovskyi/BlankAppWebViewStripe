@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BlankAppWebViewStripe
+﻿namespace BlankAppWebViewStripe
 {
     public static class AppConstants
     {

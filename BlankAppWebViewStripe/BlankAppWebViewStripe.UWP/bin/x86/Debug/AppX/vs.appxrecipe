@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-26T13:17:32.762</Modified>
+      <Modified>2019-11-26T14:13:38.186</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\BlankAppWebViewStripe.UWP.exe">
       <PackagePath>entrypoint\BlankAppWebViewStripe.UWP.exe</PackagePath>
-      <Modified>2019-11-26T13:17:31.455</Modified>
+      <Modified>2019-11-26T14:13:37.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\.nuget\packages\dryioc.dll\4.0.4\lib\netstandard2.0\DryIoc.dll">
       <PackagePath>DryIoc.dll</PackagePath>
@@ -760,7 +760,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\bin\Debug\netstandard2.0\BlankAppWebViewStripe.dll">
       <PackagePath>BlankAppWebViewStripe.dll</PackagePath>
-      <Modified>2019-11-26T13:12:15.956</Modified>
+      <Modified>2019-11-26T14:13:32.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -818,11 +818,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-26T13:17:31.276</Modified>
+      <Modified>2019-11-26T14:13:36.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-26T13:17:31.276</Modified>
+      <Modified>2019-11-26T14:13:36.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -838,7 +838,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\Core\BlankAppWebViewStripe.UWP.exe">
       <PackagePath>BlankAppWebViewStripe.UWP.exe</PackagePath>
-      <Modified>2019-11-26T13:17:32.754</Modified>
+      <Modified>2019-11-26T14:13:38.180</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
