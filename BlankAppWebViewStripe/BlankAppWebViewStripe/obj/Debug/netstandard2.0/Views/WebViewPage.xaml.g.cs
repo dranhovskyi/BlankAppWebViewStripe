@@ -13,7 +13,7 @@
 namespace BlankAppWebViewStripe.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/WebViewPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\WebViewPage.xaml")]
     public partial class WebViewPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

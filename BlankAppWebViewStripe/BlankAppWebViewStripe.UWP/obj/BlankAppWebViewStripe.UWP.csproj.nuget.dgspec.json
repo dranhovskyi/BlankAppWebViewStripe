@@ -139,6 +139,10 @@
               "target": "Package",
               "version": "[7.2.0.1367, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[33.7.0, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[3.6.0.344457, )"

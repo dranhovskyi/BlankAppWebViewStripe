@@ -1,7 +1,7 @@
-﻿using BlankAppWebViewStripe.Services;
+﻿using BlankAppWebViewStripe.Models;
+using BlankAppWebViewStripe.Services;
+using Newtonsoft.Json;
 using Prism.Navigation;
-using Stripe;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -12,6 +12,13 @@ namespace BlankAppWebViewStripe.ViewModels
     {
         public ICommand GetStripeWebPageCommand { get; set; }
 
+        private PaymentResult _paymentResult;
+        public PaymentResult PaymentResult
+        {
+            get { return _paymentResult; }
+            set { SetProperty(ref _paymentResult, value); }
+        }
+
         readonly private IPaymentService _paymentService;
 
         public MainPageViewModel(INavigationService navigationService, IPaymentService paymentService)
@@ -20,7 +27,6 @@ namespace BlankAppWebViewStripe.ViewModels
             this._paymentService = paymentService;
 
             Title = "Main Page";
-
             GetStripeWebPageCommand = new Command(async () => await GetWebPageAndOpenWebView());
         }
 
@@ -29,15 +35,14 @@ namespace BlankAppWebViewStripe.ViewModels
             base.OnNavigatedTo(parameters);
 
             var result = parameters["result"];
-            if (result is PaymentIntent paymentIntent)
+            if (result is string json)
             {
-                Debug.WriteLine(paymentIntent.Id);
+                var desirialized = JsonConvert.DeserializeObject<PaymentResult>(json);
+                if (desirialized is PaymentResult paymentResult)
+                {
+                    PaymentResult = paymentResult;
+                }
             }
-        }
-
-        public override void OnNavigatedFrom(INavigationParameters parameters)
-        {
-            base.OnNavigatedFrom(parameters);
         }
 
         private async Task GetWebPageAndOpenWebView()

@@ -2,26 +2,40 @@
 using BlankAppWebViewStripe.UWP.Renderers;
 using System;
 using System.ComponentModel;
+using System.IO;
+using System.Net;
 using Windows.UI.Xaml.Controls;
 using Xamarin.Forms.Platform.UWP;
 
 [assembly: ExportRenderer(typeof(HybridWebView), typeof(HybridWebViewRenderer))]
 namespace BlankAppWebViewStripe.UWP.Renderers
 {
-    public class HybridWebViewRenderer : ViewRenderer<HybridWebView, WebView>
+    public class HybridWebViewRenderer : ViewRenderer<HybridWebView, Windows.UI.Xaml.Controls.WebView>
     {
-        const string JavaScriptFunction = "function invokeCSharpAction(data){window.external.notify(data);}";
+        const string JavaScriptFunction = "function invokeCSharpAction(data){ window.external.notify(data); }";
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
 
             if (Element == null || Control == null)
+            {
                 return;
+            }
 
             if (e.PropertyName == HybridWebView.UriProperty.PropertyName)
             {
-                Control.Source = new Uri(Element.Uri);
+                //Control.Source = new Uri(string.Format("ms-appx-web:///{0}", Element.Uri));
+                //Control.Source = new Uri(Element.Uri);
+                try
+                {
+                    WebClient myClient = new WebClient();
+                    Stream response = myClient.OpenRead(Element.Uri);
+                    StreamReader reader = new StreamReader(response);
+                    string source = reader.ReadToEnd();
+                    Control.NavigateToString(source);
+                }
+                catch (Exception ex) { }
             }
         }
 
@@ -31,9 +45,13 @@ namespace BlankAppWebViewStripe.UWP.Renderers
 
             if (e.OldElement != null)
             {
-                Control.NavigationCompleted -= OnWebViewNavigationCompleted;
-                Control.ScriptNotify -= OnWebViewScriptNotify;
+                if (Control != null)
+                {
+                    Control.NavigationCompleted -= OnWebViewNavigationCompleted;
+                    Control.ScriptNotify -= OnWebViewScriptNotify;
+                }
             }
+
             if (e.NewElement != null)
             {
                 if (Control == null)

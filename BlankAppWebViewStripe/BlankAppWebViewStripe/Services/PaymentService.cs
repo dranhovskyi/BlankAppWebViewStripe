@@ -9,7 +9,7 @@ namespace BlankAppWebViewStripe.Services
             //RestClient<string> restClient = new RestClient<string>();
             //var webPage = await restClient.GetAsync(uri);
             //return webPage;
-            return "http://localhost:53876/MakePayment";
+            return AppConstants.WebPageUrl;
         }
     }
 }

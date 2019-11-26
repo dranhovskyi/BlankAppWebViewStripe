@@ -1,7 +1,10 @@
-﻿using System.ComponentModel;
-using Android.Content;
+﻿using Android.Content;
+using Android.Webkit;
 using BlankAppWebViewStripe.Controls;
 using BlankAppWebViewStripe.Droid.Renderers;
+using Java.Interop;
+using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -23,7 +26,9 @@ namespace BlankAppWebViewStripe.Droid.Renderers
             base.OnElementPropertyChanged(sender, e);
 
             if (Element == null || Control == null)
+            {
                 return;
+            }
 
             if (e.PropertyName == HybridWebView.UriProperty.PropertyName)
             {
@@ -55,4 +60,43 @@ namespace BlankAppWebViewStripe.Droid.Renderers
             }
         }
     }
+
+    public class JSBridge : Java.Lang.Object
+    {
+        readonly WeakReference<HybridWebViewRenderer> hybridWebViewRenderer;
+
+        public JSBridge(HybridWebViewRenderer hybridRenderer)
+        {
+            hybridWebViewRenderer = new WeakReference<HybridWebViewRenderer>(hybridRenderer);
+        }
+
+        [JavascriptInterface]
+        [Export("invokeAction")]
+        public void InvokeAction(string data)
+        {
+            HybridWebViewRenderer hybridRenderer;
+
+            if (hybridWebViewRenderer != null && hybridWebViewRenderer.TryGetTarget(out hybridRenderer))
+            {
+                hybridRenderer.Element.InvokeCommand(data);
+            }
+        }
+    }
+
+    public class JavascriptWebViewClient : WebViewClient
+    {
+        string _javascript;
+
+        public JavascriptWebViewClient(string javascript)
+        {
+            _javascript = javascript;
+        }
+
+        public override void OnPageFinished(Android.Webkit.WebView view, string url)
+        {
+            base.OnPageFinished(view, url);
+            view.EvaluateJavascript(_javascript, null);
+        }
+    }
+
 }

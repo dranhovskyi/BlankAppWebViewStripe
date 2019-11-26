@@ -12,12 +12,7 @@ using Prism.DryIoc;
 namespace BlankAppWebViewStripe
 {
     public partial class App
-    {
-        /* 
-         * The Xamarin Forms XAML Previewer in Visual Studio uses System.Activator.CreateInstance.
-         * This imposes a limitation in which the App class must have a default constructor. 
-         * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
-         */
+    { 
         public static IContainer AppContainer { get; set; }
 
         public App() : this(null) { }

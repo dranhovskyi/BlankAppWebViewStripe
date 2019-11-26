@@ -6,6 +6,6 @@ namespace BlankAppWebViewStripe
 {
     public static class AppConstants
     {
-        public static string WebPageUrl = "http://12312313:8080";
+        public static string WebPageUrl = "http://localhost:53876/MakePayment";
     }
 }

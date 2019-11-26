@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BlankAppWebViewStripe.Views.MainPage"
-             Title="{Binding Title}">
+<ContentPage
+    x:Class="BlankAppWebViewStripe.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Button Text="Go to stripe webview" Command="{Binding GetStripeWebPageCommand}"/>
+        <Label Text="{Binding PaymentResult.PaymentIntent.ClientSecret}" />
+        <Label Text="{Binding Path=PaymentResult.PaymentIntent.Amount}" />
+        <Label Text="{Binding PaymentResult.PaymentIntent.Currency}" />
+        <Label Text="{Binding PaymentResult.PaymentIntent.Status}" />
+        <Button Command="{Binding GetStripeWebPageCommand}" Text="Go to stripe webview" />
     </StackLayout>
 
 </ContentPage>
