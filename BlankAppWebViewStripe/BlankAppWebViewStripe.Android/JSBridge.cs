@@ -22,7 +22,7 @@ namespace BlankAppWebViewStripe.Droid
 
             if (hybridWebViewRenderer != null && hybridWebViewRenderer.TryGetTarget(out hybridRenderer))
             {
-                hybridRenderer.Element.InvokeAction(data);
+                hybridRenderer.Element.InvokeCommand(data);
             }
         }
     }

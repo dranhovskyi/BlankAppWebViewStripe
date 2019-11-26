@@ -1,6 +1,7 @@
 ﻿using BlankAppWebViewStripe.Controls;
 using BlankAppWebViewStripe.UWP.Renderers;
 using System;
+using System.ComponentModel;
 using Windows.UI.Xaml.Controls;
 using Xamarin.Forms.Platform.UWP;
 
@@ -11,7 +12,20 @@ namespace BlankAppWebViewStripe.UWP.Renderers
     {
         const string JavaScriptFunction = "function invokeCSharpAction(data){window.external.notify(data);}";
 
-        protected override void OnElementChanged(ElementChangedEventArgs<HybridWebView> e)
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (Element == null || Control == null)
+                return;
+
+            if (e.PropertyName == HybridWebView.UriProperty.PropertyName)
+            {
+                Control.Source = new Uri(Element.Uri);
+            }
+        }
+
+		protected override void OnElementChanged(ElementChangedEventArgs<HybridWebView> e)
         {
             base.OnElementChanged(e);
 
@@ -28,7 +42,6 @@ namespace BlankAppWebViewStripe.UWP.Renderers
                 }
                 Control.NavigationCompleted += OnWebViewNavigationCompleted;
                 Control.ScriptNotify += OnWebViewScriptNotify;
-                Control.Source = new Uri(Element.Uri);
             }
         }
 
@@ -43,7 +56,7 @@ namespace BlankAppWebViewStripe.UWP.Renderers
 
         void OnWebViewScriptNotify(object sender, NotifyEventArgs e)
         {
-            Element.InvokeAction(e.Value);
+            Element.InvokeCommand(e.Value);
         }
     }
 }

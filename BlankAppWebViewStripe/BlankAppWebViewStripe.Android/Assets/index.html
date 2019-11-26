@@ -1,0 +1,23 @@
+﻿<html>
+<body>
+<h1>HybridWebView Test</h1>
+<br/>
+Enter name: <input type="text" id="name">
+<br/>
+<br/>
+<button type="button" onclick="invokeCSCode()">Invoke C# Code</button>
+<br/>
+<script type="text/javascript">
+function invokeCSCode() {
+    try {
+        var data = document.getElementById("name").value
+        console.log("Sending Data:" + data);
+        invokeCSharpAction(data);
+    }
+    catch (err){
+        console.log(err);
+    }
+}
+</script>
+</body>
+</html>

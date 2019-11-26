@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.iOS\\BlankAppWebViewStripe.iOS.csproj": {}
+    "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.iOS/BlankAppWebViewStripe.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.iOS\\BlankAppWebViewStripe.iOS.csproj": {
+    "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.iOS/BlankAppWebViewStripe.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.iOS\\BlankAppWebViewStripe.iOS.csproj",
+        "projectUniqueName": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.iOS/BlankAppWebViewStripe.iOS.csproj",
         "projectName": "BlankAppWebViewStripe.iOS",
-        "projectPath": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.iOS\\BlankAppWebViewStripe.iOS.csproj",
-        "packagesPath": "C:\\Users\\ndranhovskyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.iOS\\obj\\",
+        "projectPath": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.iOS/BlankAppWebViewStripe.iOS.csproj",
+        "packagesPath": "/Users/dranhovskyi/.nuget/packages/",
+        "outputPath": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ndranhovskyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/dranhovskyi/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.csproj": {
-                "projectPath": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.csproj"
+              "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.csproj": {
+                "projectPath": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.csproj"
               }
             }
           }
@@ -65,28 +59,25 @@
         }
       }
     },
-    "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.csproj": {
+    "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.csproj",
+        "projectUniqueName": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.csproj",
         "projectName": "BlankAppWebViewStripe",
-        "projectPath": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe.csproj",
-        "packagesPath": "C:\\Users\\ndranhovskyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndranhovskyi\\Documents\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\BlankAppWebViewStripe\\obj\\",
+        "projectPath": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe.csproj",
+        "packagesPath": "/Users/dranhovskyi/.nuget/packages/",
+        "outputPath": "/Users/dranhovskyi/Documents/Projects/BlankAppWebViewStripe/BlankAppWebViewStripe/BlankAppWebViewStripe/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ndranhovskyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/dranhovskyi/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -117,6 +108,10 @@
               "target": "Package",
               "version": "[7.2.0.1367, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[33.7.0, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[3.6.0.344457, )"
@@ -132,7 +127,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

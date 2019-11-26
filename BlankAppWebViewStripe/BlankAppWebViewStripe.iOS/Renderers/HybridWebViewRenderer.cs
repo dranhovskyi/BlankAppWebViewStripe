@@ -45,7 +45,7 @@ namespace BlankAppWebViewStripe.iOS.Renderers
 
         public void DidReceiveScriptMessage(WKUserContentController userContentController, WKScriptMessage message)
         {
-            Element.InvokeAction(message.Body.ToString());
+            Element.InvokeCommand(message.Body.ToString());
         }
     }
 }

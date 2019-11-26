@@ -17,7 +17,7 @@
                 <Button Text="Back" HorizontalOptions="StartAndExpand" Command="{Binding OnBackButtonClickedCommand}" />
             </StackLayout>
             <!-- <WebView Grid.Row="1" Source="{Binding Source}" Navigating="WebViewNavigating" /> -->
-            <controls:HybridWebView x:Name="hybridWebView" Grid.Row="1" Uri="http://localhost:53876/MakePayment" 
+            <controls:HybridWebView x:Name="hybridWebView" Command="{Binding GetResultCommand}" Grid.Row="1" Uri="{Binding Source}" 
                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
         </Grid>
     </ContentPage.Content>

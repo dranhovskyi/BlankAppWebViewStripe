@@ -5,6 +5,8 @@ using BlankAppWebViewStripe.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using BlankAppWebViewStripe.Services;
+using DryIoc;
+using Prism.DryIoc;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BlankAppWebViewStripe
@@ -16,6 +18,8 @@ namespace BlankAppWebViewStripe
          * This imposes a limitation in which the App class must have a default constructor. 
          * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
          */
+        public static IContainer AppContainer { get; set; }
+
         public App() : this(null) { }
 
         public App(IPlatformInitializer initializer) : base(initializer) { }
@@ -34,6 +38,8 @@ namespace BlankAppWebViewStripe
             containerRegistry.RegisterForNavigation<WebViewPage, WebViewPageViewModel>();
 
             containerRegistry.RegisterInstance<IPaymentService>(new PaymentService());
+
+            AppContainer = containerRegistry.GetContainer();
         }
     }
 }

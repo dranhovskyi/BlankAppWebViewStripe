@@ -1,17 +1,27 @@
-﻿using System;
+﻿using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace BlankAppWebViewStripe.Controls
 {
     public class HybridWebView : View
     {
-        private Action<string> action;
+        public static readonly BindableProperty CommandProperty = BindableProperty.Create
+            (nameof(Command),
+            typeof(ICommand),
+            typeof(HybridWebView));
 
-        public static readonly BindableProperty UriProperty = BindableProperty.Create(
-          propertyName: "Uri",
-          returnType: typeof(string),
-          declaringType: typeof(HybridWebView),
-          defaultValue: default(string));
+        public static readonly BindableProperty UriProperty = BindableProperty.Create
+            (nameof(Uri),
+            typeof(string),
+            typeof(HybridWebView),
+            default(string),
+            BindingMode.TwoWay);
+
+        public ICommand Command
+        {
+            get { return (ICommand)GetValue(CommandProperty); }
+            set { SetValue(CommandProperty, value); }
+        }
 
         public string Uri
         {
@@ -19,23 +29,18 @@ namespace BlankAppWebViewStripe.Controls
             set { SetValue(UriProperty, value); }
         }
 
-        public void RegisterAction(Action<string> callback)
-        {
-            action = callback;
-        }
-
         public void Cleanup()
         {
-            action = null;
+            Command = null;
         }
 
-        public void InvokeAction(string data)
+        public void InvokeCommand(object data)
         {
-            if (action == null || data == null)
+            if (Command == null || data == null)
             {
                 return;
             }
-            action.Invoke(data);
+            Command.Execute(data);
         }
     }
 }

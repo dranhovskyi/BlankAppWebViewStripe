@@ -1,1 +1,1 @@
-C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\BlankAppWebViewStripe.UWP.csproj;x86
+C:\Users\natalia\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\BlankAppWebViewStripe.UWP.csproj;x86

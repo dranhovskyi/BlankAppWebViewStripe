@@ -1,4 +1,5 @@
-﻿using Android.Content;
+﻿using System.ComponentModel;
+using Android.Content;
 using BlankAppWebViewStripe.Controls;
 using BlankAppWebViewStripe.Droid.Renderers;
 using Xamarin.Forms;
@@ -17,6 +18,19 @@ namespace BlankAppWebViewStripe.Droid.Renderers
             _context = context;
         }
 
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (Element == null || Control == null)
+                return;
+
+            if (e.PropertyName == HybridWebView.UriProperty.PropertyName)
+            {
+                Control.LoadUrl($"{Element.Uri}");
+            }
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<HybridWebView> e)
         {
             base.OnElementChanged(e);
@@ -27,6 +41,7 @@ namespace BlankAppWebViewStripe.Droid.Renderers
                 var hybridWebView = e.OldElement as HybridWebView;
                 hybridWebView.Cleanup();
             }
+
             if (e.NewElement != null)
             {
                 if (Control == null)
@@ -37,7 +52,6 @@ namespace BlankAppWebViewStripe.Droid.Renderers
                     SetNativeControl(webView);
                 }
                 Control.AddJavascriptInterface(new JSBridge(this), "jsBridge");
-                Control.LoadUrl($"file:///android_asset/Content/{Element.Uri}");
             }
         }
     }

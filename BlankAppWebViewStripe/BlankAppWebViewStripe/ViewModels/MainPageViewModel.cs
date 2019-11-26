@@ -1,6 +1,7 @@
 ﻿using BlankAppWebViewStripe.Services;
 using Prism.Navigation;
-using System;
+using Stripe;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -26,6 +27,17 @@ namespace BlankAppWebViewStripe.ViewModels
         public async override void OnNavigatedTo(INavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
+
+            var result = parameters["result"];
+            if (result is PaymentIntent paymentIntent)
+            {
+                Debug.WriteLine(paymentIntent.Id);
+            }
+        }
+
+        public override void OnNavigatedFrom(INavigationParameters parameters)
+        {
+            base.OnNavigatedFrom(parameters);
         }
 
         private async Task GetWebPageAndOpenWebView()
@@ -34,7 +46,7 @@ namespace BlankAppWebViewStripe.ViewModels
 
             var navParam = new NavigationParameters();
             navParam.Add("source", source);
-            await NavigationService.NavigateAsync("WebViewPage", navParam, useModalNavigation: true);
+            await NavigationService.NavigateAsync("WebViewPage", navParam, true);
         }
     }
 }
