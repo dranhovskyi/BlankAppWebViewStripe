@@ -14,7 +14,7 @@ namespace BlankAppWebViewStripe.Droid.Renderers
     public class HybridWebViewRenderer : ViewRenderer<HybridWebView, Android.Webkit.WebView>
     {
         const string JavascriptFunction = "function invokeCSharpAction(data){jsBridge.invokeAction(data);}";
-        Context _context;
+        readonly Context _context;
 
         public HybridWebViewRenderer(Context context) : base(context)
         {
@@ -74,18 +74,18 @@ namespace BlankAppWebViewStripe.Droid.Renderers
         [Export("invokeAction")]
         public void InvokeAction(string data)
         {
-            HybridWebViewRenderer hybridRenderer;
+            HybridWebViewRenderer webViewRenderer;
 
-            if (hybridWebViewRenderer != null && hybridWebViewRenderer.TryGetTarget(out hybridRenderer))
+            if (hybridWebViewRenderer != null && hybridWebViewRenderer.TryGetTarget(out webViewRenderer))
             {
-                hybridRenderer.Element.InvokeCommand(data);
+                webViewRenderer.Element.InvokeCommand(data);
             }
         }
     }
 
     public class JavascriptWebViewClient : WebViewClient
     {
-        string _javascript;
+        readonly string _javascript;
 
         public JavascriptWebViewClient(string javascript)
         {
