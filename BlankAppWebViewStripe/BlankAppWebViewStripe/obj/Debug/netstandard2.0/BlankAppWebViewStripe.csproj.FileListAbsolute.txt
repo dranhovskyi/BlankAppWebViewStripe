@@ -9,3 +9,4 @@ C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\Blan
 C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.dll
 C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.pdb
+C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\obj\Debug\netstandard2.0\BlankAppWebViewStripe.csprojAssemblyReference.cache
