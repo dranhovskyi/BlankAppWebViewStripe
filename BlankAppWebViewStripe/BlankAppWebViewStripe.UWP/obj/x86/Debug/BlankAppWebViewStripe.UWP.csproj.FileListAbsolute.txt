@@ -661,6 +661,3 @@ C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\Blan
 C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\obj\x86\Debug\FxResources.System.Memory.SR.resw
 C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\obj\x86\Debug\FxResources.System.Security.Cryptography.ProtectedData.SR.resw
 C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\obj\x86\Debug\FxResources.System.Security.Permissions.SR.resw
-C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\obj\x86\Debug\.winmd_cache\$RuntimeComponent.winmd_637103658700555763.json
-C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\obj\x86\Debug\.winmd_cache\$RuntimeComponent.winmd_637103661680186619.json
-C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\obj\x86\Debug\.winmd_cache\$RuntimeComponent.winmd_637103662972375275.json

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>46E6AAED3A5EA54930DBFD89705BB219260B0483E6AF23EF629AFC377A2FD253</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C8596264F2638D1495198F841FBDC2F1C911599A6384F459A1EB3BEEF0DBB9E2</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>31e6402e-0407-4419-a6c3-7c6d18576017_1.0.0.0_x86__mm77914cpbf52</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>31e6402e-0407-4419-a6c3-7c6d18576017_mm77914cpbf52!App</RegisteredUserModeAppID>
     <RegisteredPackageID>31e6402e-0407-4419-a6c3-7c6d18576017</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-26T14:13:38.186</Modified>
+      <Modified>2019-11-27T09:37:09.758</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\BlankAppWebViewStripe.UWP.exe">
       <PackagePath>entrypoint\BlankAppWebViewStripe.UWP.exe</PackagePath>
-      <Modified>2019-11-26T14:13:37.100</Modified>
+      <Modified>2019-11-27T09:35:30.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\.nuget\packages\dryioc.dll\4.0.4\lib\netstandard2.0\DryIoc.dll">
       <PackagePath>DryIoc.dll</PackagePath>
@@ -760,7 +760,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe\bin\Debug\netstandard2.0\BlankAppWebViewStripe.dll">
       <PackagePath>BlankAppWebViewStripe.dll</PackagePath>
-      <Modified>2019-11-26T14:13:32.441</Modified>
+      <Modified>2019-11-27T09:35:26.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -818,11 +818,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-26T14:13:36.930</Modified>
+      <Modified>2019-11-27T09:35:30.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-26T14:13:36.930</Modified>
+      <Modified>2019-11-27T09:35:30.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -834,11 +834,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-26T12:14:25.914</Modified>
+      <Modified>2019-11-27T09:37:09.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.UWP\bin\x86\Debug\Core\BlankAppWebViewStripe.UWP.exe">
       <PackagePath>BlankAppWebViewStripe.UWP.exe</PackagePath>
-      <Modified>2019-11-26T14:13:38.180</Modified>
+      <Modified>2019-11-27T09:37:09.753</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -27,6 +27,8 @@ namespace BlankAppWebViewStripe.UWP.Renderers
             {
                 //Control.Source = new Uri(string.Format("ms-appx-web:///{0}", Element.Uri));
                 //Control.Source = new Uri(Element.Uri);
+                //TODO: window.external.notify('') works only with SSL https
+                //Should be added to Package.appxmanifest to Content URLs 
                 try
                 {
                     WebClient myClient = new WebClient();
