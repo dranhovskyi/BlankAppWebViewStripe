@@ -2,6 +2,6 @@
 {
     public static class AppConstants
     {
-        public static string WebPageUrl = "http://192.168.198.163:80/MakePayment";
+        public static string WebPageUrl = "http://ov-kyv-ltp-002.oneviewhealthcare.com:80/MakePayment";
     }
 }
