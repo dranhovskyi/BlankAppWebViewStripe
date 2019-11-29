@@ -19,7 +19,7 @@ namespace BlankAppWebViewStripe.ViewModels
             set { SetProperty(ref _paymentResult, value); }
         }
 
-        readonly private IPaymentService _paymentService;
+        private readonly IPaymentService _paymentService;
 
         public MainPageViewModel(INavigationService navigationService, IPaymentService paymentService)
             : base(navigationService)
@@ -30,7 +30,7 @@ namespace BlankAppWebViewStripe.ViewModels
             GetStripeWebPageCommand = new Command(async () => await GetWebPageAndOpenWebView());
         }
 
-        public async override void OnNavigatedTo(INavigationParameters parameters)
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
 
@@ -41,13 +41,16 @@ namespace BlankAppWebViewStripe.ViewModels
                 if (desirialized is PaymentResult paymentResult)
                 {
                     PaymentResult = paymentResult;
+
+                    await _paymentService.SendPaymentResult(paymentResult);
                 }
             }
         }
 
         private async Task GetWebPageAndOpenWebView()
         {
-            var source = await _paymentService.GetStripeWebPage(AppConstants.WebPageUrl);
+            var transactionId = await _paymentService.GetTransactionId();
+            var source = _paymentService.GetStripeWebPage(transactionId);
 
             var navParam = new NavigationParameters();
             navParam.Add("source", source);

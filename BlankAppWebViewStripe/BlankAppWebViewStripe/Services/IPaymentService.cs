@@ -1,9 +1,16 @@
 ﻿using System.Threading.Tasks;
+using BlankAppWebViewStripe.Models;
+using Stripe;
 
 namespace BlankAppWebViewStripe.Services
 {
     public interface IPaymentService
     {
-        Task<string> GetStripeWebPage(string uri);
+
+        Task<string> GetTransactionId();
+
+        string GetStripeWebPage(string transactionId);
+
+        Task<StripeResponse> SendPaymentResult(PaymentResult paymentResult);
     }
 }
