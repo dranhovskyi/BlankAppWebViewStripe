@@ -6,8 +6,7 @@ namespace BlankAppWebViewStripe.UITest
     static class AppManager
     {
         const string ApkPath = @"C:\Users\ndranhovskyi\Documents\BlankAppWebViewStripe\BlankAppWebViewStripe\BlankAppWebViewStripe.Android\bin\Debug\com.companyname.appname.apk";
-        const string AppPath = "../../../PrismFilms/PrismFilms.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-13.0/PrismFilms.iOS.app";
-        const string IpaBundleId = "com.company.prismfilms";
+        const string AppPath = "";
 
         static IApp app;
         public static IApp App

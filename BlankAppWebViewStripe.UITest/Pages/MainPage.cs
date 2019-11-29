@@ -1,7 +1,5 @@
 ﻿// Aliases Func<AppQuery, AppQuery> with Query
 
-using System;
-using Xamarin.UITest.Queries;
 using Query = System.Func<Xamarin.UITest.Queries.AppQuery, Xamarin.UITest.Queries.AppQuery>;
 
 namespace BlankAppWebViewStripe.UITest.Pages
