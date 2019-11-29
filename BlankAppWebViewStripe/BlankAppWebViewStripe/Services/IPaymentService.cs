@@ -6,7 +6,6 @@ namespace BlankAppWebViewStripe.Services
 {
     public interface IPaymentService
     {
-
         Task<string> GetTransactionId();
 
         string GetStripeWebPage(string transactionId);
